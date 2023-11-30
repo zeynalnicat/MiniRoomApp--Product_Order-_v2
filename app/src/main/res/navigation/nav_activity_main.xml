@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_activity_main"
+    app:startDestination="@id/orderListsFragment">
+
+    <fragment
+        android:id="@+id/orderListsFragment"
+        android:name="com.matrix.android_104_android.OrderListsFragment"
+        android:label="fragment_order_lists"
+        tools:layout="@layout/fragment_order_lists" >
+        <action
+            android:id="@+id/action_orderListsFragment_to_productListFragment"
+            app:destination="@id/productListFragment" />
+        <action
+            android:id="@+id/action_orderListsFragment_to_addProductFragment"
+            app:destination="@id/addProductFragment" />
+        <action
+            android:id="@+id/action_orderListsFragment_to_addAccountFragment"
+            app:destination="@id/addAccountFragment" />
+        <action
+            android:id="@+id/action_orderListsFragment_to_orderLinesFragment"
+            app:destination="@id/orderLinesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productListFragment"
+        android:name="com.matrix.android_104_android.ProductListFragment"
+        android:label="fragment_product_list"
+        tools:layout="@layout/fragment_product_list" />
+    <fragment
+        android:id="@+id/addProductFragment"
+        android:name="com.matrix.android_104_android.AddProductFragment"
+        android:label="fragment_add_product"
+        tools:layout="@layout/fragment_add_product" />
+    <fragment
+        android:id="@+id/addAccountFragment"
+        android:name="com.matrix.android_104_android.AddAccountFragment"
+        android:label="fragment_add_account"
+        tools:layout="@layout/fragment_add_account" />
+    <fragment
+        android:id="@+id/orderLinesFragment"
+        android:name="com.matrix.android_104_android.OrderLinesFragment"
+        android:label="fragment_order_lines"
+        tools:layout="@layout/fragment_order_lines" />
+</navigation>
